@@ -12,6 +12,18 @@
         nav a:hover { background-color: #555; }
         .container { padding: 40px; max-width: 1000px; margin: auto; text-align: center; }
         img.responsive { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-top: 20px; }
+    /* Mobile Responsive Menu */
+        @media screen and (max-width: 600px) {
+            nav { 
+                flex-direction: column; 
+            }
+            nav a { 
+                display: block; 
+                width: 100%; 
+                box-sizing: border-box; 
+                border-bottom: 1px solid #444; 
+            }
+        }
     </style>
 </head>
 <body>
