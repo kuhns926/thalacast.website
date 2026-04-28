@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThalaCast | Desalination & Fuel</title>
+    <title>ThalaCast | The Ocean Refinery</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
         header { background-color: #222; color: #fff; padding: 1rem 0; text-align: center; }
@@ -13,26 +13,25 @@
         .container { padding: 40px; max-width: 1000px; margin: auto; text-align: left; }
         h2 { color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
         .content-block { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        img.responsive { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; }
-    /* Mobile Responsive Menu */
+        img.responsive { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; margin-bottom: 15px; }
+        .stats-box { background: #e9ecef; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center; font-weight: bold; }
+        ul { line-height: 1.6; margin-bottom: 20px; }
+        
+        /* Mobile Responsive Menu */
         @media screen and (max-width: 600px) {
-            nav { 
-                flex-direction: column; 
-            }
-            nav a { 
-                display: block; 
-                width: 100%; 
-                box-sizing: border-box; 
-                border-bottom: 1px solid #444; 
-            }
+            nav { flex-direction: column; }
+            nav a { display: block; width: 100%; box-sizing: border-box; border-bottom: 1px solid #444; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>THALACAST</h1>
-        <p>The Five Nines City</p>
+        <a href="index.html" style="color: #fff; text-decoration: none;">
+            <h1 style="margin-bottom: 5px;">THALACAST</h1>
+        </a>
+        <p style="margin-top: 0;">The Five Nines City</p>
     </header>
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="grid.html">The Grid</a>
@@ -40,24 +39,39 @@
         <a href="AI.html">AI Data Center</a>
         <a href="investors.html">Investors</a>
     </nav>
+    
     <div class="container">
-        <h2>Coastal Desalination</h2>
+        <h2>The Ocean Refinery & Zero Liquid Discharge</h2>
         
         <div class="content-block">
-            <h3>The 1 MGD Coastal Anchor</h3>
-            <p>Positioned strategically on the far corner of the coastline to preserve beachfront living, our 1 Million Gallon Per Day (MGD) desalination plant secures the city's water independence.</p>
-            <img src="image/ThalaCast Desalination Plant.jpg" alt="1 MGD Desalination Plant Interior" class="responsive">
+            <h3>More Than Just Water</h3>
+            <p>Traditional desalination plants are heavily criticized for pumping toxic, hyper-saline brine back into the ocean, devastating local marine ecosystems. At ThalaCast, we do not view brine as waste; we view it as a high-value raw material. Our facility operates on a strict <strong>Zero Liquid Discharge (ZLD)</strong> mandate, acting as a complete Ocean Refinery where 100% of the intake is utilized for life support, heavy industry, and agriculture.</p>
         </div>
 
         <div class="content-block">
-            <h3>Zero Liquid Discharge Brine Processing</h3>
-            <p>ThalaCast operates with a commitment to the coastal ecosystem. We utilize advanced brine processing units to extract usable minerals and clean salt from the brine.</p>
-            <img src="image/ThalaCast Brine Facility.jpg" alt="Brine Mineral Recovery Facility" class="responsive">
+            <h3>Artery 1: The Fresh Water Lifeline</h3>
+            <p>Ocean water is first routed through our advanced Reverse Osmosis (RO) membrane arrays. The clean permeate (freshwater) is sent directly to our municipal water towers, which split the supply into three vital community arteries:</p>
+            <ul>
+                <li><strong>Residential Tap Supply:</strong> Crystal-clear drinking water for the 1,000 downtown homes and businesses.</li>
+                <li><strong>The Waterpark Heat Sink:</strong> Filling the million-gallon recreational wave pools that double as our AI cooling loop.</li>
+                <li><strong>Agricultural Expansion:</strong> Dedicated irrigation for our YUMA-8 fields and high-yield greenhouses, ensuring localized food security.</li>
+            </ul>
         </div>
 
         <div class="content-block">
-            <h3>Fueling the Night Shift</h3>
-            <p>To run our nighttime sCO2 power turbines, we must produce 11 metric tons of hydrogen daily. The desalination plant easily supplies the 99,000 liters of ultra-pure deionized water required by our 65 MW electrolysis plant.</p>
+            <h3>Artery 2: The Thermal Crystallizer & Distilled Vapor</h3>
+            <p>The remaining concentrate—the heavy salt brine—is never routed back to the sea. Instead, it is piped into our ZLD Thermal Crystallizers, powered by our massive solar surplus. As the brine boils, the escaping vapor is captured and condensed into <strong>ultra-pure distilled water</strong>.</p>
+            <p>This distilled water is the lifeblood of our advanced technology sector. Because it lacks conductive minerals, it is used directly in our AI server liquid-cooling racks, and it serves as the perfect, scale-free feedstock for our 20 MW Electrolyzers to produce pure H<sub>2</sub> and O<sub>2</sub> fuel.</p>
+        </div>
+
+        <div class="content-block">
+            <h3>Artery 3: Resource Mining & The iBlock Manufactory</h3>
+            <p>Once the distilled water is boiled away, we are left with a dry, mineral-rich salt cake. Through mechanical separation, we extract high-value minerals to be used in our advanced cement composites and customized agricultural fertilizers for the YUMA-8 crops.</p>
+            <p>The final, unusable toxic "bitterns" are routed next door to the <strong>iBlock Manufactory</strong>. Here, robotic presses encapsulate the heavy salts inside recycled PETG plastic waste, fusing them into certified-safe, ultra-dense building blocks used to construct the next phase of the city.</p>
+            
+            <div class="stats-box">
+                Zero Ocean Dumping | 100% Resource Utilization | Distilled H<sub>2</sub> Feedstock
+            </div>
         </div>
     </div>
 </body>
