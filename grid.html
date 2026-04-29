@@ -6,21 +6,27 @@
     <title>ThalaCast | The Grid</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #222; color: #fff; padding: 1rem 0; text-align: center; }
-        nav { display: flex; justify-content: center; background-color: #333; }
-        nav a { color: #fff; padding: 14px 20px; text-decoration: none; text-transform: uppercase; font-weight: bold; }
-        nav a:hover { background-color: #555; }
+        header { background-color: #222; color: #fff; padding: 2rem 0; text-align: center; }
+        header h1 { margin-bottom: 5px; font-size: 2.5rem; letter-spacing: 2px; }
+        header p { margin-top: 0; font-size: 1.2rem; font-weight: 300; color: #ccc; }
+        nav { display: flex; justify-content: center; background-color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        nav a { color: #fff; padding: 14px 20px; text-decoration: none; text-transform: uppercase; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #0056b3; }
         .container { padding: 40px; max-width: 1000px; margin: auto; text-align: left; }
-        h2 { color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
-        .content-block { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        img.responsive { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; margin-bottom: 15px; }
-        .stats-box { background: #e9ecef; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center; font-weight: bold; }
+        h2 { color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-top: 40px;}
+        .content-block { background: #fff; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .stats-box { background: #e9ecef; padding: 30px; border-radius: 8px; margin-top: 40px; text-align: center; font-size: 1.1rem; }
+        .financial-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .financial-table th, .financial-table td { border-bottom: 1px solid #ddd; padding: 10px; text-align: left; }
+        .financial-table th { background-color: #f8f9fa; }
+        .job-title { font-weight: bold; color: #0056b3; }
         ul { line-height: 1.6; margin-bottom: 20px; }
+        img.responsive { max-width: 100%; height: auto; border-radius: 8px; margin-top: 15px; margin-bottom: 15px; }
         
-        /* Mobile Responsive Menu */
-        @media screen and (max-width: 600px) {
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
             nav { flex-direction: column; }
-            nav a { display: block; width: 100%; box-sizing: border-box; border-bottom: 1px solid #444; }
+            nav a { display: block; width: 100%; box-sizing: border-box; border-bottom: 1px solid #444; text-align: center; }
         }
     </style>
 </head>
